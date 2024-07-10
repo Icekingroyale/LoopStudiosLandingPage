@@ -50,8 +50,12 @@ body {
   font-family: "alata", sans-serif;
 }
 
+.menu{
+  display: none;
+}
+
 /* hover effect for navlink */
-.navlink p::after{
+.navlink p::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -62,7 +66,7 @@ body {
   transition: all 500ms ease-in;
 }
 
-.navlink p:hover::after{
+.navlink p:hover::after {
   opacity: 1;
   scale: 0.5;
 }
@@ -155,9 +159,9 @@ body {
     letter-spacing: 5px;
   }
 
-  .botton:hover{
-      color: var(--White);
-      background-color: var(--Black);
+  .botton:hover {
+    color: var(--White);
+    background-color: var(--Black);
   }
 }
 
@@ -200,13 +204,11 @@ body {
   background-image: url("./images/desktop/image-curiosity.jpg");
 }
 .figure:nth-child(8) {
-  background-image: url("./images/desktop/image-fisheye.jpg")
-    linear-gradient(0, 0, 0, 0);
+  background-image: url("./images/desktop/image-fisheye.jpg");
 }
 
-
 /* footer styling */
-.footer{
+.footer {
   width: 100%;
   background-color: var(--Black);
   padding: 100px;
@@ -215,35 +217,37 @@ body {
   align-items: bottom;
 }
 
-.right{
+.right {
   color: var(--White);
 
-  p{color: var(--Dark-Gray);}
+  p {
+    color: var(--Dark-Gray);
+  }
 }
 
-.left figure, 
-.social-icons{
+.left figure,
+.social-icons {
   margin-bottom: 20px;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   gap: 20px;
 }
 
-.social-icons img{
+.social-icons img {
   position: absolute;
 }
 
-.social-icons img::after{
+.social-icons img::after {
   .navlink p {
     color: var(--White);
     position: relative;
     font-family: "alata", sans-serif;
   }
-  
+
   /* hover effect for navlink */
-  .navlink p::after{
+  .navlink p::after {
     content: "";
     width: 100%;
     position: absolute;
@@ -262,4 +266,68 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 850px) {
+  .menu {
+    display: block;
+  }
+
+  .navh{
+    display: none;
+  }
+
+.footer{
+  flex-direction: column;
+  align-items: center;
+}
+
+.navf{
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons{
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.showcase{
+  flex-direction: column;
+  position: static;
+
+  div{
+    position: static;
+    text-align: center;
+  }
+
+  figure{
+    width: 90%;
+
+    img{
+      width: 95%
+    };
+  }
+}
+
+.header, .footer, .showcase, .creation{
+  padding: 20px;
+}
+
+.header {
+  background-image: url(./images/mobile/image-hero.jpg);
+  /* padding: 100px 100px; */
+}
+
+/* hero section style */
+.hero-section {
+  width: 100%;
+}
+
+.hero-section h2 {
+  font-size: 45px;
+}
+
+
 }
