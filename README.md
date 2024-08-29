@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-design.jpg.jpg)
-![](./design/mobile-design.jpg.jpg)
+![](./design/desktop-design.jpg)
+![](./design/mobile-design.jpg)
 
 
 ### Links
@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-I learnt about the usage of the tag '<figcaption>'
+I learnt about the usage of the tag `figcaption`
 
 To see how you can add code snippets, see below:
 
